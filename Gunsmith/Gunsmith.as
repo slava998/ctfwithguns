@@ -156,7 +156,7 @@ void onInit(CBlob@ this)
 		s.buttonheight = 1;
 
 		s.spawnNothing = true;
-	}
+	}*/
 	{
 		ShopItem@ s = addShopItem(this, "High Power Ammunition (10)", "$icon_sniperammo$", "mat_sniperammo-10", "Rounds that are mainly used by sniper rifles. Very effective against heavy armored targets.");
 		AddRequirement(s.requirements, "coin", "", "Coins", 10);
@@ -165,14 +165,14 @@ void onInit(CBlob@ this)
 	}
 	{
 		ShopItem@ s = addShopItem(this, "Big iron", "$truerevolver$", "truerevolver", "If a cowboy wants a cool handgun - he gets it no matter what.\n\nUses High Power Rounds.");
-		AddRequirement(s.requirements, "coin", "", "Coins", 50);
+		AddRequirement(s.requirements, "coin", "", "Coins", 300);
 
 		s.customButton = true;
 		s.buttonwidth = 1;
 		s.buttonheight = 1;
 
 		s.spawnNothing = true;
-	}*/
+	}
 }
 
 bool canPickup(CBlob@ blob)
