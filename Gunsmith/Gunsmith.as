@@ -44,7 +44,7 @@ void onInit(CBlob@ this)
 	this.inventoryButtonPos = Vec2f(-8, 0);
 
 	this.set_Vec2f("shop offset", Vec2f(0,0));
-	this.set_Vec2f("shop menu size", Vec2f(5, 3));
+	this.set_Vec2f("shop menu size", Vec2f(5, 4));
 	this.set_string("shop description", "Gunsmith's Workshop");
 	this.set_u8("shop icon", 15);
 
