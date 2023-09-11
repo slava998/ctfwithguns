@@ -48,7 +48,7 @@ void onInit(CBlob@ this)
 	this.set_string("shop description", "Gunsmith's Workshop");
 	this.set_u8("shop icon", 15);
 
-	AddIconToken("$dp27$", "DP-27.png", Vec2f(32, 12), this.getTeamNum());
+	//AddIconToken("$dp27$", "DP-27.png", Vec2f(32, 12), this.getTeamNum());
 	AddIconToken("$icon_sniperammo$", "AmmoIcon_Sniper.png", Vec2f(24,24), 255);
 	AddIconToken("$icon_gatlingammo$", "AmmoIcon_Gatling.png", Vec2f(24,24), 255);
 	AddIconToken("$icon_rifleammo$", "AmmoIcon_HighCal.png", Vec2f(24,24), 255);
@@ -63,7 +63,7 @@ void onInit(CBlob@ this)
 	}
 	{
 		ShopItem@ s = addShopItem(this, "Revolver", "$revolver$", "revolver", "A compact firearm for those with small pockets.\n\nUses Lowcal Rounds.");
-		AddRequirement(s.requirements, "coin", "", "Coins", 15);
+		AddRequirement(s.requirements, "coin", "", "Coins", 10);
 
 		s.customButton = true;
 		s.buttonwidth = 2;
@@ -166,10 +166,6 @@ void onInit(CBlob@ this)
 	{
 		ShopItem@ s = addShopItem(this, "Big iron", "$truerevolver$", "truerevolver", "If a cowboy wants a cool handgun - he gets it no matter what.\n\nUses High Power Rounds.");
 		AddRequirement(s.requirements, "coin", "", "Coins", 300);
-
-		s.customButton = true;
-		s.buttonwidth = 1;
-		s.buttonheight = 1;
 
 		s.spawnNothing = true;
 	}

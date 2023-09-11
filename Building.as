@@ -71,15 +71,15 @@ void onInit(CBlob@ this)
 		AddRequirement(s.requirements, "blob", "mat_gold", "Gold", CTFCosts::tunnel_gold);
 	}
 	{
-		ShopItem@ s = addShopItem(this, "Gunsmith's Workshop", "$icon_gunsmith$", "gunsmith", "A workshop for those who enjoy making holes.\n$GREEN$Slowly produces ammunition.$GREEN$");
+		ShopItem@ s = addShopItem(this, "Gunsmith's Workshop", "$icon_gunsmith$", "gunsmith", "A workshop for those who enjoy making holes.\n$GREEN$Slowly produces ammunition.\nAutomatically stores nearby dropped weapons and armor.$GREEN$");
 		AddRequirement(s.requirements, "blob", "mat_wood", "Wood", 50);
 	}
-	/*{
+	{
 		ShopItem@ s = addShopItem(this, "Stone Quarry", "$stonequarry$", "quarry", Descriptions::quarry);
 		AddRequirement(s.requirements, "blob", "mat_stone", "Stone", CTFCosts::quarry_stone);
 		AddRequirement(s.requirements, "blob", "mat_gold", "Gold", CTFCosts::quarry_gold);
 		AddRequirement(s.requirements, "no more", "quarry", "Stone Quarry", CTFCosts::quarry_count);
-	}*/
+	}
 }
 
 void GetButtonsFor(CBlob@ this, CBlob@ caller)
